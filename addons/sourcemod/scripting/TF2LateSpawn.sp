@@ -56,17 +56,6 @@ public void OnClientDisconnect(int iClient)
 
 public Action CmdJoinClass(int iClient, const char[] strCommand, int iArgs)
 {
-	// https://github.com/Mikusch/arena-latespawn-fix
-	
-	if (IsClientInGame(iClient))
-	{
-		if (GetClientTeam(iClient) == 0)
-		{
-			PrintToChat(iClient, "\x01[\05Latespawn Control\01] You can't select a class unless you choose a team.");
-			return Plugin_Handled;
-		}
-	}
-	
 	if (g_hLateSpawnEnable.BoolValue && g_bRoundStarted && (iClient >= 1) && (iClient <= MaxClients))
 	{
 		char strClass[20]; GetCmdArg(1, strClass, sizeof(strClass));
