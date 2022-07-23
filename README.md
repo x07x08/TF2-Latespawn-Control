@@ -5,7 +5,7 @@ This is an edited version of meng's original [CSS Late Spawn](https://forums.all
 
   | ConVars                   | Description                                                                                   | Default value    |
   |---------------------------|-----------------------------------------------------------------------------------------------|------------------|
-  | `sm_latespawn_enabled`    | Enable / disable the plugin. (this will not disable the [unassigned team fix](https://github.com/Mikusch/arena-latespawn-fix/blob/105d592f4534529dbe767d21e7b244a2001846a2/addons/sourcemod/scripting/arena-latespawn-fix.sp#L63))                  | `1` (enabled)    |
+  | `sm_latespawn_enabled`    | Enable / disable the plugin.                                                                  | `1` (enabled)    |
   | `sm_latespawn_block_time` | Time until latespawning is blocked.                                                           | `10.0` (seconds) |
   | `sm_latespawn_allow_blue` | Allow blue team to latespawn?                                                                 | `0` (disabled)   |
   | `sm_latespawn_allow_red`  | Allow red team to latespawn?                                                                  | `1` (enabled)    |
